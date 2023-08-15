@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Vithkuqi:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root{} */
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans Vithkuqi', sans-serif;
+}
+
+p,input,li,a,label{
+    font-family: 'Noto Sans Vithkuqi', sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url("../img/Diseño\ sin\ título.png");
+    background-size: cover;
+    background-position: center;
+}
+
+header nav{
+    width: 84%;
+    background: transparent;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+header nav .menu{
+    display: flex;
+}
+
+nav .menu li{
+    margin: 0 10px;
+    list-style: none;
+}
+
+
+.menu li a{
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.5s;
+    color: #00000085;
+}
+
+.menu li a:hover{
+    color: #000000;
+    transform: scale(1.1);
+}
+
+header nav .menu2{
+    display: flex;
+}
+
+nav .menu2 li{
+    margin: 0 13px;
+    list-style: none;
+}
+
+.menu2 li a{
+    text-decoration: none;
+    padding: 10px 8px;
+}
+
+.menu2 li input{
+    padding-top: 10px;
+    background: transparent;
+    border: transparent;
+    margin: 0 25px;
+}
+
+.menu2 li input::placeholder{
+    color: #ffffffc5;
+}
+
+
+.menu2 li button{
+    color: #ffffff;
+    background: #433abbd2;
+    border-radius: 20px;
+    border: transparent;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu2 li button:hover{
+    background: #282372;
+    border-radius: 20px;
+    border: transparent;
+    padding: 8px;
+}
+
+header #hero{
+    position: relative;
+    width: 80%;
+    /* El margen superior (arriba) se establece en 200px.
+    El margen derecho (derecha) se establece en 30% del ancho del contenedor padre.
+    El margen inferior (abajo) se establece en 0.
+    El margen izquierdo (izquierda) se establece en 0. */
+    margin: 30px 180px;
+}
+
+header #hero .fila{
+    box-shadow: 0 0 0 0 transparent;
+    position: relative;
+    left: 90px;
+}
+
+.fila .info h1{
+    font-size: 70px;
+    position: relative;
+    left: 85px;
+    color: #fdfdfd;
+}
+
+/* esto es para cambiarle cosas a lo que esta adentro de la etiqueta <b> */
+.fila .info h1 b{
+    color: #00000079;
+    font-size: 30px;
+}
+
+.separador {
+    margin: 0 15px;
+  }
+
+.fila .info .genero{
+    position: relative;
+    left: 190px;
+    text-align: center;
+    width: 20%;
+    color: #fdfdfd;
+}
+
+.fila .info .descripcion{
+    width: 50%;
+    color: #fdfdfd;
+}
+
+.fila .info .detalles{
+    text-align: center;
+    width: 20%;
+    position: relative;
+    left: 200px;
+    color: #fdfdfd;
+}
+
+.fila .info button{
+    position: relative;
+    left: 50px;
+    text-align: center;
+    border-radius: 20px;
+    background: #433abbd2;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .1ms;
+    border: transparent;
+}
+
+.fila .info button:hover{
+    background: #282372;
+    border-radius: 20px;
+    border: transparent;
+    padding: 10px 20px;
+}
+
+
+.fila .poster{
+    position: relative;
+    bottom: 350px;
+    left: 1000px;
+    border-radius: 8px;
+}
+
+#peliculas{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    background: url("../img/fondo-de-posters-de-peliculas.png");
+}
+
+#peliculas h2{
+    text-align: center;
+    color: #fdfdfd;
+    padding-bottom: 40px;
+    font-size: 50px;
+}
+
+#peliculas .fila{
+    width: 80%;
+    display: flex;
+    margin: 15px 200px;
+    justify-content: space-between;
+}
+
+.col-peliculas .gato{
+    color: #fdfdfd;
+    position: relative;
+    right: 10px;
+}
+
+.col-peliculas .wick{
+    color: #fdfdfd;
+    position: relative;
+    right: 5px;
+}
+
+.col-peliculas .nwa{
+    color: #fdfdfd;
+}
+
+.col-peliculas .rapido{
+    color: #fdfdfd;
+}
+
+.col-peliculas .spiderman{
+    color: #fdfdfd;
+    position: relative;
+}
+
+.col-peliculas .mario{
+    color: #fdfdfd;
+    position: relative;
+    right: 8px;
+}
+
+.col-peliculas .ted{
+    color: #fdfdfd;
+}
+
+.col-peliculas .todo{
+    color: #fdfdfd;
+}
+
+.col-peliculas .valoracion{
+    color: #e63c3c;
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+
+.fila .col-peliculas .playg{
+    position: absolute;
+    left: 298px;
+    top: 1050px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playg:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playw{
+    position: absolute;
+    left: 697px;
+    top: 1050px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playw:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playn{
+    position: absolute;
+    left: 1115px;
+    top: 1050px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playn:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playr{
+    position: absolute;
+    left: 1510px;
+    top: 1050px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playr:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .plays{
+    position: absolute;
+    left: 300px;
+    top: 1490px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .plays:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playm{
+    position: absolute;
+    left: 734px;
+    top: 1490px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playm:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playt{
+    position: absolute;
+    left: 1128px;
+    top: 1490px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playt:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playtt{
+    position: absolute;
+    left: 1512px;
+    top: 1490px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playtt:hover{
+    transform: scale(1.1);
+}
+
+.col-peliculas b{
+    color: #8a8a8a;
+}
+
+/* SERIES */
+#series{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    background: url("../img/portadas\ de\ series2.jpg");
+}
+
+#series h2{
+    text-align: center;
+    color: #fdfdfd;
+    padding-bottom: 40px;
+    font-size: 50px;
+}
+
+#series .fila{
+    width: 80%;
+    display: flex;
+    margin: 15px 200px;
+    justify-content: space-between;
+}
+
+.fila .col-peliculas{
+    margin-bottom: 40px;
+}
+
+.col-peliculas .gato{
+    color: #fdfdfd;
+    position: relative;
+    right: 10px;
+}
+
+.col-peliculas .wick{
+    color: #fdfdfd;
+    position: relative;
+    right: 5px;
+}
+
+.col-peliculas .nwa{
+    color: #fdfdfd;
+}
+
+.col-peliculas .rapido{
+    color: #fdfdfd;
+}
+
+.col-peliculas .spiderman{
+    color: #fdfdfd;
+    position: relative;
+}
+
+.col-peliculas .mario{
+    color: #fdfdfd;
+    position: relative;
+    right: 8px;
+}
+
+.col-peliculas .ted{
+    color: #fdfdfd;
+}
+
+.col-peliculas .todo{
+    color: #fdfdfd;
+}
+
+.col-peliculas .valoracion{
+    color: #e63c3c;
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+
+.fila .col-peliculas .playb{
+    position: absolute;
+    left: 238px;
+    top: 2255px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playb:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playe{
+    position: absolute;
+    left: 665px;
+    top: 2255px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playe:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playsim{
+    position: absolute;
+    left: 1100px;
+    top: 2255px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playsim:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playrick{
+    position: absolute;
+    left: 1548px;
+    top: 2255px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playrick:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playsecret{
+    position: absolute;
+    left: 238px;
+    top: 2720px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playsecret:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playskins{
+    position: absolute;
+    left: 675px;
+    top: 2720px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playskins:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playstranger{
+    position: absolute;
+    left: 1113px;
+    top: 2720px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playstranger:hover{
+    transform: scale(1.1);
+}
+
+.fila .col-peliculas .playboys{
+    position: absolute;
+    left: 1558px;
+    top: 2720px;
+    z-index: 10;
+    display: flex;
+    transition: 0.5s;
+}
+
+.fila .col-peliculas .playboys:hover{
+    transform: scale(1.1);
+}
+
+.col-peliculas b{
+    color: #8a8a8a;
+}
+
+#cronograma{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    background: #040718f3;
+}
+
+#cronograma h2{
+    text-align: center;
+    color: #fdfdfd;
+    padding-bottom: 40px;
+    font-size: 50px;
+}
+
+#cronograma .fila{
+    width: 80%;
+    display: flex;
+    margin: 15px 200px;
+    justify-content: space-between;
+}
+
+#cronograma .col-peliculas .blue{
+    color: #fdfdfd;
+    text-align: center;
+}
+
+#cronograma .col-peliculas .monja{
+    color: #fdfdfd;
+    text-align: center;
+}
+
+#cronograma .col-peliculas .freddy{
+    color: #fdfdfd;
+    text-align: center;
+}
+
+#cronograma .col-peliculas .dune{
+    color: #fdfdfd;
+    text-align: center;
+}
+
+#cronograma .col-peliculas .rect1{
+    position: absolute;
+    top: 3650px;
+    left: 244px;
+    z-index: 9;
+    border: transparent;
+    background: #282372;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#cronograma .col-peliculas .rect2{
+    position: absolute;
+    top: 3650px;
+    left: 657px;
+    z-index: 9;
+    border: transparent;
+    background: #282372;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#cronograma .col-peliculas .rect3{
+    position: absolute;
+    top: 3650px;
+    left: 1104px;
+    z-index: 9;
+    border: transparent;
+    background: #282372;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#cronograma .col-peliculas .rect4{
+    position: absolute;
+    top: 3650px;
+    left: 1538px;
+    z-index: 9;
+    border: transparent;
+    background: #282372;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#cronograma .col-peliculas .playblue{
+    position: absolute;
+    top: 3500px;
+    left: 270px;
+    transition: 0.5s;
+}
+
+#cronograma .col-peliculas .playblue:hover{
+    transform: scale(1.1);
+}
+
+#cronograma .col-peliculas .playmonja{
+    position: absolute;
+    top: 3500px;
+    left: 710px;
+    transition: 0.5s;
+}
+
+#cronograma .col-peliculas .playmonja:hover{
+    transform: scale(1.1);
+}
+
+#cronograma .col-peliculas .playfive{
+    position: absolute;
+    top: 3500px;
+    left: 1150px;
+    transition: 0.5s;
+}
+
+#cronograma .col-peliculas .playfive:hover{
+    transform: scale(1.1);
+}
+
+#cronograma .col-peliculas .playdune{
+    position: absolute;
+    top: 3500px;
+    left: 1588px;
+    transition: 0.5s;
+}
+
+#cronograma .col-peliculas .playdune:hover{
+    transform: scale(1.1);
+}
+
+#contactame{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#contactame h3{
+    font-size: 50px;
+    color: #fdfdfd;
+    padding: 100px 0 20px 0;
+}
+
+#contactame p{
+    color: #e6771dd3;
+    font-size: 30px;
+}
+
+#contactame form{
+    width: 55%;
+    margin: 0 auto;
+}
+
+form .fila .nombre{
+    padding: 10px 10px;
+    width: 40%;
+}
+
+form .fila .mensaje{
+    padding: 10px 10px;
+    width: 60%;
+    height: 100px;
+}
+
+#contactame form button{
+    color: #ffffff;
+    background: #433abbd2;
+    border-radius: 20px;
+    border: transparent;
+    cursor: pointer;
+    padding: 8px;
+}
+
+#contactame form button:hover{
+    background: #282372;
+    border-radius: 20px;
+    border: transparent;
+    padding: 8px;
+}
+
+footer{
+    background: #000000;
+    text-align: center;
+    width: 100%;
+}
+
+footer p{
+    color: #fdfdfd;
+}
